@@ -1,0 +1,22 @@
+{
+    "name": "githubfisher/laravel-client",
+    "description": "Single Sign On Client for Laravel",
+    "keywords": ["Single Sign On","SSO","laravel","Auth","Client"],
+    "require": {
+        "githubfisher/laravel-client": "~0.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelClient\\Client\\": "src/"
+        }
+    },
+
+    "license": "MIT",
+    "minimum-stability" : "dev",
+    "authors": [
+        {
+            "name": "githubfisher",
+            "email": "gooodfisher@126.com"
+        }
+    ]
+}
