@@ -58,18 +58,6 @@ class Client
 	}
 
 	/*
-	 * get user logout info, delete cookie and session
-	 * @return bool
-	 */
-	public function toLogout($request)
-	{
-		// check Server Signature
-		if(!$this->checkSignature($request))
-			return false;
-		$this->deleteTicket();
-	}
-
-	/*
 	 * delete ticket
 	 * @return none
 	 */
@@ -294,8 +282,6 @@ class Client
 	 */
 	private function chanslate_add_to_empty($str)
 	{
-		// $str = str_replace('=','-',$str);
-		// $str = str_replace('+','_',$str);
 		$str = str_replace(' ','+',$str);
 		return $str;
 	}
@@ -309,21 +295,4 @@ class Client
 		$array = json_decode($json,TRUE);
 		return $array;
 	}
-
-	/*
-	 * check ticket availability
-	 * @return bool
-	 */
-	private function getUrl($url)
-	{
-		$ch = curl_init();
-		curl_setopt($ch,CURLOPT_URL,$url);
-		curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
-		curl_setopt($ch,CURLOPT_HEADER,0);
-		// curl_setopt($ch, CURLOPT_ENCODING, "");
-		$output = curl_exec($ch);
-		curl_close($ch);
-	    return $output;
-	}
-
 }
