@@ -19,11 +19,6 @@ return array(
 	'isLogin' => 'http://tpsso/index.php/Home/server/isLogin',
 
 	/*
-	 * Server Login URL
-	 */
-	'loginView' => 'http://tpsso/index.php/Home/server/index',
-
-	/*
 	 * Server Logout URL
 	 */
 	'logout' => 'http://tpsso/index.php/Home/server/logout',
@@ -46,5 +41,5 @@ return array(
 	/*
 	 * Per some seconds reCheck user's ticket from sso server
 	 */
-	'reCheckTime' => 90,
+	'reCheckTime' => 600,
 );

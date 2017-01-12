@@ -128,16 +128,6 @@ class Client
 	}
 
 	/*
-	 * Rediect to Server Login Page
-	 * @return redirect
-	 */
-	private function toServerLogin()
-	{
-		$loginUrl = $this->_config['loginView'].$this->signature().'&appId='.$this->_config['appId'].'&callback='.$this->_callback;
-		header('Location:'.$loginUrl);
-	}
-
-	/*
 	 * Rediect to Server isLogin Controller
 	 * @return redirect
 	 */
