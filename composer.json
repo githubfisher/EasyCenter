@@ -1,9 +1,9 @@
 {
-    "name": "githubfisher/EasyClient",
+    "name": "githubfisher/easy-client",
     "description": "Single Sign On Client for Laravel",
     "keywords": ["Single Sign On","SSO","laravel","Auth","Client"],
     "require": {
-        "githubfisher/EasyClient": "~0.0.1"
+        "githubfisher/easy-client": "~0.0.2"
     },
     "autoload": {
         "psr-4": {
