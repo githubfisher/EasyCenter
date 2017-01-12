@@ -1,5 +1,5 @@
 <?php
-namespace LaravelClient\Client;
+namespace EasyClient\Client;
 
 class Client
 {
@@ -308,18 +308,6 @@ class Client
 		$json = str_replace('&quot;','"',$json);
 		$array = json_decode($json,TRUE);
 		return $array;
-	}
-
-	/*
-	 * check ticket availability
-	 * @return bool
-	 */
-	private function checkTicket($ticketId)
-	{
-		$signature = $this->signature();
-		$url = $this->_config['checkTicketUrl'].$this->signature().'&ticketId='.$ticketId;
-		$result = $this->getUrl($url);
-		return $result;
 	}
 
 	/*

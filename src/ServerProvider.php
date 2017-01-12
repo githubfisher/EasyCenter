@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelClient\Client;
+namespace EasyClient\Client;
 
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;

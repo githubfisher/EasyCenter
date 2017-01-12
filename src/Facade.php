@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelClient\Client;
+namespace EasyClient\Client;
 
 use Illuminate\Support\Facades\Facade as LaravelFacade;
 

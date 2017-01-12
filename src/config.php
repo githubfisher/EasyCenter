@@ -1,6 +1,5 @@
 <?php
 return array(
-	//'配置项'=>'配置值'
 	/*
 	 * Client Info
 	 */
@@ -11,7 +10,6 @@ return array(
 	/*
 	 * Server Info
 	 */
-	'serverId' => '1000000',
 	'serverSecret' => '1000001',
 	'serverToken' => '123456',
 
@@ -31,23 +29,12 @@ return array(
 	'logout' => 'http://tpsso/index.php/Home/server/logout',
 
 	/*
-	 * Server Login Controller
-	 */
-	'loginController' => 'http://tpsso/index.php/Home/server/login',
-
-	/*
-	 * Server check ticket Controller
-	 */
-	'checkTicketUrl' => 'http://tpsso/index.php/Home/server/checkTicket',
-
-	/*
 	 * Ticket Checks
 	 */
 	'ticketChecks' => 'all', // session , cookie
 
 	/*
 	 * Ticket Store Name
-	 * ticket = ['id'=>'Rand()','create_at'=>'timestamp','expire_time'=>'6000','user'=>'encrypted','clients'=>['client1','client2']]
 	 */
 	'ticketName' => 'ticket',
 
@@ -60,4 +47,4 @@ return array(
 	 * Per some seconds reCheck user's ticket from sso server
 	 */
 	'reCheckTime' => 90,
-	);
+);
